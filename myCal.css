@@ -1,0 +1,62 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.mycal-container{
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.slide-wrapper{
+  position: absolute;
+  left: -600px;
+  top: 0;
+  width: 10000px;
+  height: 300px;
+}
+.slide-item {
+  float: left;
+  width: 600px;
+  height: 300px;
+}
+.slide-item img{
+  width: 100%;
+  height: 100%;
+}
+.slide-dot{
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  bottom: 0px;
+}
+.slide-dot span{
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  background: #fff;
+  margin: 4px;
+  cursor: pointer;
+}
+.slide-dot .active{
+  background: #007aff;
+}
+.slideLeftBtn,.slideRightBtn{
+  position: absolute;
+  font-family: "iconfont";
+  font-size: 60px;
+  top: 120px;
+  color: #fff;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.slideLeftBtn{
+  left: 10px;
+}
+.slideRightBtn{
+  right: 10px;
+}
